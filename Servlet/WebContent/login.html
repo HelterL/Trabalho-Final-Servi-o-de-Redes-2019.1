@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+	<title>Login</title>
+	<link rel="stylesheet" href="styleLogin.css">
+</head>
+<body>
+ 	<nav id="menu">
+    <ul>
+      	  <li><a href="ServLetLogin?acao=Cadastro">Cadastro</a></li>
+    </ul>
+</nav>
+
+	<div class="login-box">
+		<h2>Login</h2>
+	<form method="POST"  action="ServLetLogin" enctype="application/x-www-form-urlencoded" autocomplete="off">
+		<div class="textbox">
+		<i class="fa fa-user" aria-hidden="true" value=""></i>
+		<input type="text" name="email"  required="required" placeholder="E-mail">
+		</div>
+		<div class="textbox">
+		<i class="fa fa-lock" aria-hidden="true" value=""></i>
+		<input type="password" name="senha"  required="required" placeholder="Password">
+		</div>
+			<input type="submit" name="acao" value="Login" class="btnlogin">
+	</form>
+	</div>
+
+</body>
+</html>
